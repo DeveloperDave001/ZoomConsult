@@ -10,26 +10,28 @@
     <link rel="stylesheet" href="services-styles.css">
 </head>
 <body>
-    <nav>
+    <nav id="nav">
         <a href="index.html" class="logo">ZOOM CONSULTS<span class="logo-dot"></span></a>
         <ul class="nav-links">
-            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="index.html#showcase">Portfolio</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-        <button class="nav-btn" onclick="go('contact')">Get Started</button>
+        <button class="nav-btn" onclick="window.location.href='contact.html'">Get Started</button>
         <button class="burger" onclick="openMob()">
             <span></span><span></span><span></span>
         </button>
     </nav>
 
-    <div class="mob-menu">
+    <div class="mob-menu" id="mobMenu">
         <button class="mob-close" onclick="closeMob()">&times;</button>
-        <a href="index.html#about" onclick="closeMob()">About</a>
+        <a href="index.html" onclick="closeMob()">Home</a>
+        <a href="about.html" onclick="closeMob()">About</a>
         <a href="services.html" onclick="closeMob()">Services</a>
-        <a href="index.html#showcase" onclick="closeMob()">Portfolio</a>
-        <a href="index.html#contact" onclick="closeMob()">Contact</a>
+        <a href="portfolio.html" onclick="closeMob()">Portfolio</a>
+        <a href="contact.html" onclick="closeMob()">Contact</a>
     </div>
 
     <section class="services-hero">
@@ -76,6 +78,7 @@
                     <span class="meta-value">Residential & Commercial</span>
                 </div>
             </div>
+            <a href="contact.html" class="btn-service">Get Started</a>
         </div>
     </section>
 
@@ -105,6 +108,7 @@
                     <span class="meta-value">Modern Architecture</span>
                 </div>
             </div>
+            <a href="contact.html" class="btn-service">Get Started</a>
         </div>
     </section>
 
@@ -134,6 +138,7 @@
                     <span class="meta-value">All Project Scales</span>
                 </div>
             </div>
+            <a href="contact.html" class="btn-service">Get Started</a>
         </div>
     </section>
 
@@ -163,6 +168,7 @@
                     <span class="meta-value">Professionals & Students</span>
                 </div>
             </div>
+            <a href="contact.html" class="btn-service">Get Started</a>
         </div>
     </section>
 
@@ -192,6 +198,7 @@
                     <span class="meta-value">All Projects</span>
                 </div>
             </div>
+            <a href="contact.html" class="btn-service">Get Started</a>
         </div>
     </section>
 
@@ -221,6 +228,7 @@
                     <span class="meta-value">New Construction</span>
                 </div>
             </div>
+            <a href="contact.html" class="btn-service">Get Started</a>
         </div>
     </section>
 
@@ -256,7 +264,7 @@
 
     <section class="cta-band">
         <h2>Ready to Transform Your Space?</h2>
-        <a href="index.html#contact" class="btn-white">Start Your Project →</a>
+        <a href="contact.html" class="btn-white">Start Your Project →</a>
     </section>
 
     <footer>

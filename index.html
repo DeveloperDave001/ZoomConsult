@@ -14,30 +14,35 @@
 <!-- Mobile menu -->
 <div class="mob-menu" id="mobMenu">
   <button class="mob-close" onclick="closeMob()">✕</button>
-  <a href="#hero"     onclick="go(event,'#hero')">Home</a>
-  <a href="#about"    onclick="go(event,'#about')">About</a>
-  <a href="#services" onclick="go(event,'#services')">Services</a>
-  <a href="#showcase" onclick="go(event,'#showcase')">Work</a>
-  <a href="#contact"  onclick="go(event,'#contact')">Contact</a>
+  <a href="index.html" onclick="closeMob()">Home</a>
+  <a href="about.html" onclick="closeMob()">About</a>
+  <a href="services.html" onclick="closeMob()">Services</a>
+  <a href="portfolio.html" onclick="closeMob()">Portfolio</a>
+  <a href="contact.html" onclick="closeMob()">Contact</a>
 </div>
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="#hero" class="logo" onclick="go(event,'#hero')">
+  <a href="index.html" class="logo">
     <div class="logo-dot"></div>ZOOM CONSULTS
   </a>
   <ul class="nav-links">
-    <li><a href="#about"    onclick="go(event,'#about')">About</a></li>
-    <li><a href="#services" onclick="go(event,'#services')">Services</a></li>
-    <li><a href="#showcase" onclick="go(event,'#showcase')">Our Work</a></li>
-    <li><a href="#contact"  onclick="go(event,'#contact')">Contact</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
-  <a href="#contact" class="nav-btn" onclick="go(event,'#contact')">Get in touch</a>
+  <a href="contact.html" class="nav-btn">Get in touch</a>
   <button class="burger" onclick="openMob()"><span></span><span></span><span></span></button>
 </nav>
 
 <!-- ── HERO ── -->
 <section id="hero">
+  <video class="hero-video" autoplay="autoplay" muted="muted" loop="loop" playsinline="playsinline" webkit-playsinline="true" poster="img/deco2.jpg">
+    <source src="interior.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
   <div class="hero-left">
     <div class="hero-tag reveal">Lagos, Nigeria — Interior &amp; Glass Specialists</div>
     <h1 class="hero-h1 reveal d1">

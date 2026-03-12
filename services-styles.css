@@ -185,6 +185,7 @@ h2.st { font-family: var(--f-d); font-size: clamp(48px, 5vw, 80px); letter-spaci
 .detail-meta {
   display: flex;
   gap: 48px;
+  margin-bottom: 32px;
 }
 .meta-item {
   display: flex;
@@ -203,6 +204,25 @@ h2.st { font-family: var(--f-d); font-size: clamp(48px, 5vw, 80px); letter-spaci
   font-size: 14px;
   font-weight: 500;
   color: var(--black);
+}
+.btn-service {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--red);
+  color: var(--white);
+  font-family: var(--f-m);
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  transition: background .2s;
+  width: auto;
+  min-width: 140px;
+}
+.btn-service:hover {
+  background: var(--red2);
 }
 
 /* PROCESS SECTION */
@@ -281,19 +301,60 @@ footer { background: var(--black); border-top: 1px solid rgba(255,255,255,.08); 
   nav { padding: 0 24px; }
   .nav-links, .nav-btn { display: none; }
   .burger { display: flex; }
-  .services-hero { padding: 60px 24px; min-height: 60vh; }
-  .services-intro { grid-template-columns: 1fr; gap: 40px; padding: 80px 24px; }
-  .service-detail { grid-template-columns: 1fr; }
+  .services-hero { padding: 60px 24px; min-height: 50vh; }
+  .hero-tag { font-size: 10px; margin-bottom: 20px; }
+  .hero-h1 { font-size: clamp(40px, 10vw, 72px); }
+  .hero-sub { font-size: 14px; max-width: 100%; }
+  .services-intro { grid-template-columns: 1fr; gap: 32px; padding: 48px 24px; }
+  .intro-left .tag { margin-bottom: 12px; }
+  .intro-left h2.st { font-size: clamp(36px, 8vw, 56px); }
+  .intro-right p { font-size: 14px; }
+  .service-detail { grid-template-columns: 1fr; min-height: auto; }
   .service-detail.reverse .detail-img { order: 1; }
   .service-detail.reverse .detail-content { order: 2; }
-  .detail-img { min-height: 400px; }
-  .detail-content { padding: 60px 32px; }
-  .process-grid { grid-template-columns: 1fr 1fr; }
-  .process-section { padding: 80px 24px; }
-  .cta-band { flex-direction: column; padding: 60px 24px; text-align: center; }
+  .detail-img { min-height: 300px; }
+  .detail-num { font-size: 56px; top: 20px; left: 20px; }
+  .detail-content { padding: 32px 24px; }
+  .detail-title { font-size: 32px; margin-bottom: 16px; }
+  .detail-desc { font-size: 14px; margin-bottom: 24px; }
+  .detail-list { margin-bottom: 24px; }
+  .detail-list li { font-size: 11px; padding: 10px 0; }
+  .detail-meta { flex-wrap: wrap; gap: 24px; }
+  .meta-item { min-width: 120px; }
+  .meta-label { font-size: 9px; }
+  .meta-value { font-size: 13px; }
+  .btn-service { width: 100%; justify-content: center; }
+  .process-section { padding: 48px 24px; background: var(--black); }
+  .process-header { margin-bottom: 40px; padding: 0 16px; }
+  .process-header .tag { margin-bottom: 12px; }
+  .process-header h2.st { font-size: clamp(36px, 8vw, 56px); color: var(--white); }
+  .process-header p { font-size: 14px; }
+  .process-grid { grid-template-columns: 1fr 1fr; gap: 2px; }
+  .process-card { padding: 32px 20px; }
+  .process-num { font-size: 44px; margin-bottom: 16px; }
+  .process-card h4 { font-size: 22px; margin-bottom: 12px; }
+  .process-card p { font-size: 12px; }
+  .cta-band { flex-direction: column; padding: 48px 24px; text-align: center; gap: 24px; }
+  .cta-band h2 { font-size: clamp(32px, 8vw, 48px); }
   footer { flex-direction: column; gap: 16px; text-align: center; padding: 24px; }
 }
 @media (max-width: 640px) {
+  .logo { font-size: 18px; }
+  .services-hero { padding: 48px 20px; min-height: 45vh; }
+  .hero-h1 { font-size: 36px; }
+  .hero-sub { font-size: 13px; }
+  .services-intro { padding: 40px 20px; }
+  .services-intro h2.st { font-size: 32px; }
+  .detail-img { min-height: 250px; }
+  .detail-content { padding: 24px 20px; }
+  .detail-title { font-size: 26px; }
+  .detail-meta { flex-direction: column; gap: 16px; }
+  .meta-item { min-width: auto; }
+  .process-section { padding: 40px 20px; }
+  .process-header h2.st { font-size: 32px; }
   .process-grid { grid-template-columns: 1fr; }
-  .detail-meta { flex-direction: column; gap: 24px; }
+  .process-card { padding: 24px 20px; }
+  .cta-band { padding: 40px 20px; }
+  .cta-band h2 { font-size: 28px; }
+  .btn-white { padding: 14px 24px; font-size: 10px; }
 }
